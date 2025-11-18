@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bs4rwhyuvm81j"
+path="res://.godot/imported/track-wide-straight-skew-left-side.obj-9a3a76a8b996f06a711ac7e5f65a464c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/track-wide-straight-skew-left-side.obj-9a3a76a8b996f06a711ac7e5f65a464c.mesh"]
+
+source_file="res://COM415 Assignment Resources/Vehicles/kenney_toy-car-kit/Models/OBJ format/track-wide-straight-skew-left-side.obj"
+dest_files=["res://.godot/imported/track-wide-straight-skew-left-side.obj-9a3a76a8b996f06a711ac7e5f65a464c.mesh", "res://.godot/imported/track-wide-straight-skew-left-side.obj-9a3a76a8b996f06a711ac7e5f65a464c.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

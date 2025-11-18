@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dhyi0o6prxh7r"
+path="res://.godot/imported/09_LOOP_Daily_Chores_by_Florian_Stracker.wav-04dac1eb34728b0218aede43f03d2567.sample"
+
+[deps]
+
+source_file="res://COM415 Assignment Resources/Audio/Florian_Stracker_8-Bit_Video_Game_Music/09_LOOP_Daily_Chores_by_Florian_Stracker.wav"
+dest_files=["res://.godot/imported/09_LOOP_Daily_Chores_by_Florian_Stracker.wav-04dac1eb34728b0218aede43f03d2567.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

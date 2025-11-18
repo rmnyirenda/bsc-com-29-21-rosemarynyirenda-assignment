@@ -1,0 +1,46 @@
+[gd_scene load_steps=5 format=3 uid="uid://dh85fa8ds11s7"]
+
+[ext_resource type="PackedScene" uid="uid://bf2eg6hriun6l" path="res://COM415 Assignment Resources/Scenes/longstraight_road.tscn" id="1_adlmx"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_kecmn"]
+
+[sub_resource type="Sky" id="Sky_y824j"]
+sky_material = SubResource("ProceduralSkyMaterial_kecmn")
+
+[sub_resource type="Environment" id="Environment_jgkq6"]
+background_mode = 2
+sky = SubResource("Sky_y824j")
+
+[node name="NewScene" type="Node"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_jgkq6")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="WorldEnvironment"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.0743, 126.103, -38.8147)
+
+[node name="LongstraightRoad" parent="." instance=ExtResource("1_adlmx")]
+
+[node name="LongstraightRoad4" parent="." instance=ExtResource("1_adlmx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.972, 0, 0)
+
+[node name="LongstraightRoad5" parent="." instance=ExtResource("1_adlmx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.9947, 0, 0)
+
+[node name="LongstraightRoad6" parent="." instance=ExtResource("1_adlmx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.9194, 0, 0)
+
+[node name="LongstraightRoad7" parent="." instance=ExtResource("1_adlmx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.8176, 0, 0)
+
+[node name="LongstraightRoad8" parent="." instance=ExtResource("1_adlmx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.7828, 0, 0)
+
+[node name="LongstraightRoad9" parent="." instance=ExtResource("1_adlmx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -41.7567, 0, 0)
+
+[node name="LongstraightRoad2" parent="." instance=ExtResource("1_adlmx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.85517, 0, 0)
+
+[node name="LongstraightRoad3" parent="." instance=ExtResource("1_adlmx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.8946, 0, 0)

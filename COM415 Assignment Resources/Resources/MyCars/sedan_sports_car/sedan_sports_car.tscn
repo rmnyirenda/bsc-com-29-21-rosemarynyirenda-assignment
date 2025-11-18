@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=3 uid="uid://ba1myykibbenm"]
+
+[ext_resource type="PackedScene" uid="uid://dqlpky4x2su8u" path="res://COM415 Assignment Resources/Vehicles/kenney_car-kit/Models/GLB format/sedan-sports.glb" id="1_egesn"]
+[ext_resource type="Script" uid="uid://dbo2bojm1yng8" path="res://COM415 Assignment Resources/Scripts/Test.gd" id="2_kcxwf"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_a8gnd"]
+size = Vector3(1.28271, 0.909607, 2.52975)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_gbya7"]
+height = 1.16162
+radius = 0.317383
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_wpum0"]
+height = 1.17419
+radius = 0.304199
+
+[node name="SedanSportsCar" instance=ExtResource("1_egesn")]
+script = ExtResource("2_kcxwf")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0065918, 0.647796, -0.0346622)
+shape = SubResource("BoxShape3D_a8gnd")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." index="6"]
+transform = Transform3D(-4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, -0.0116028, 0.314078, -0.654331)
+shape = SubResource("CylinderShape3D_gbya7")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="." index="7"]
+transform = Transform3D(-4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, -0.00335741, 0.300653, 0.662685)
+shape = SubResource("CylinderShape3D_wpum0")
+
+[node name="Camera3D" type="Camera3D" parent="." index="8"]
+transform = Transform3D(-1, -2.21247e-16, -8.74228e-08, -4.19892e-08, 0.877104, 0.4803, 7.66789e-08, 0.4803, -0.877104, 0.199127, 3.75264, -10.0818)

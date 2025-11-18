@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="CarData" load_steps=2 format=3 uid="uid://ucjot8ul5pgm"]
+
+[ext_resource type="Script" uid="uid://l4f0dss7ekq0" path="res://COM415 Assignment Resources/Scripts/CarData.gd" id="1_xi3ei"]
+
+[resource]
+script = ExtResource("1_xi3ei")
+car_name = "race_car_red"
+scene_path = "res://COM415 Assignment Resources/MyCars/race_car_red/race_car_red.tscn"
+description = "A standard racing vehicle"
+max_speed = 890.0
+acceleration = 550
+handling = 5.0
+braking = 7.0
+engine_sound_path = "sound"
+metadata/_custom_type_script = "uid://l4f0dss7ekq0"

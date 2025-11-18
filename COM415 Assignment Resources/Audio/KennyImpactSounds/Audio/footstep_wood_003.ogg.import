@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cciye07bdo78l"
+path="res://.godot/imported/footstep_wood_003.ogg-58307ea80e16c38a99fae2e1f61023da.oggvorbisstr"
+
+[deps]
+
+source_file="res://COM415 Assignment Resources/Audio/KennyImpactSounds/Audio/footstep_wood_003.ogg"
+dest_files=["res://.godot/imported/footstep_wood_003.ogg-58307ea80e16c38a99fae2e1f61023da.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

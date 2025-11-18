@@ -1,0 +1,36 @@
+[gd_scene load_steps=2 format=3 uid="uid://chi20td7q8nd1"]
+
+[ext_resource type="Script" uid="uid://c3vbqgxhuf8oh" path="res://COM415 Assignment Resources/Scripts/Trackmenu.gd" id="1_4c2cg"]
+
+[node name="TrackMenu" type="Node3D"]
+
+[node name="Menu" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1086.0
+offset_bottom = 597.0
+script = ExtResource("1_4c2cg")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Menu"]
+layout_mode = 0
+offset_right = 626.0
+offset_bottom = 265.0
+
+[node name="TrackList" type="ItemList" parent="Menu/VBoxContainer"]
+layout_mode = 2
+
+[node name="DescriptionLabel" type="Label" parent="Menu/VBoxContainer"]
+layout_mode = 2
+text = "Choose A Track"
+
+[node name="PlayButton" type="Button" parent="Menu/VBoxContainer"]
+layout_mode = 2
+text = "Play"
+
+[node name="BackButton" type="Button" parent="Menu/VBoxContainer"]
+layout_mode = 2
+text = "Back"
+
+[connection signal="item_selected" from="Menu/VBoxContainer/TrackList" to="Menu" method="_on_track_selected"]
+[connection signal="pressed" from="Menu/VBoxContainer/PlayButton" to="Menu" method="_on_select_pressed"]
+[connection signal="pressed" from="Menu/VBoxContainer/BackButton" to="Menu" method="_on_back_pressed"]

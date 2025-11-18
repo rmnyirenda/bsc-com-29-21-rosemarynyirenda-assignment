@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://qjbu36keeu5a"
+path="res://.godot/imported/roadBump.obj-a577128aa664daf816f3fef8a09a01bb.mesh"
+
+[deps]
+
+files=["res://.godot/imported/roadBump.obj-a577128aa664daf816f3fef8a09a01bb.mesh"]
+
+source_file="res://COM415 Assignment Resources/Environment/kenney_racing-kit/Models/OBJ format/roadBump.obj"
+dest_files=["res://.godot/imported/roadBump.obj-a577128aa664daf816f3fef8a09a01bb.mesh", "res://.godot/imported/roadBump.obj-a577128aa664daf816f3fef8a09a01bb.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

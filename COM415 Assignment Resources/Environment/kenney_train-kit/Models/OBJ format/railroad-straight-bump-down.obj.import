@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://fcghiw5ijsmp"
+path="res://.godot/imported/railroad-straight-bump-down.obj-4c84600a6a536cef08ab4fad142d218f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/railroad-straight-bump-down.obj-4c84600a6a536cef08ab4fad142d218f.mesh"]
+
+source_file="res://COM415 Assignment Resources/Environment/kenney_train-kit/Models/OBJ format/railroad-straight-bump-down.obj"
+dest_files=["res://.godot/imported/railroad-straight-bump-down.obj-4c84600a6a536cef08ab4fad142d218f.mesh", "res://.godot/imported/railroad-straight-bump-down.obj-4c84600a6a536cef08ab4fad142d218f.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

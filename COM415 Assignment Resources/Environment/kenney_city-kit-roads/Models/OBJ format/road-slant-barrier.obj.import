@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://crh6q7oabe1xl"
+path="res://.godot/imported/road-slant-barrier.obj-599fd3d8cdac9d051ceafe316d7d8c2d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/road-slant-barrier.obj-599fd3d8cdac9d051ceafe316d7d8c2d.mesh"]
+
+source_file="res://COM415 Assignment Resources/Environment/kenney_city-kit-roads/Models/OBJ format/road-slant-barrier.obj"
+dest_files=["res://.godot/imported/road-slant-barrier.obj-599fd3d8cdac9d051ceafe316d7d8c2d.mesh", "res://.godot/imported/road-slant-barrier.obj-599fd3d8cdac9d051ceafe316d7d8c2d.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

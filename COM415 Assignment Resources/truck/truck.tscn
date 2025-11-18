@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=3 uid="uid://btfxbxuwowseg"]
+
+[ext_resource type="Script" uid="uid://diati827lyojn" path="res://COM415 Assignment Resources/Scripts/CarScript.gd" id="1_8etvf"]
+[ext_resource type="PackedScene" uid="uid://dlkstsmfarin0" path="res://COM415 Assignment Resources/Vehicles/kenney_toy-car-kit/Models/GLB format/vehicle-truck.glb" id="2_lximv"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_mpdps"]
+size = Vector3(0.821655, 0.443954, 0.8396)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_bfnr4"]
+height = 0.681274
+radius = 0.126465
+
+[node name="Truck" type="CharacterBody3D" node_paths=PackedStringArray("front_left_wheels", "front_right_wheels")]
+script = ExtResource("1_8etvf")
+engine_power = 50.0
+front_left_wheels = NodePath("vehicle-truck2/vehicle-truck/wheel-fl")
+front_right_wheels = NodePath("vehicle-truck2/vehicle-truck/wheel-fr")
+metadata/_custom_type_script = "uid://diati827lyojn"
+
+[node name="vehicle-truck2" parent="." instance=ExtResource("2_lximv")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00360107, 0.358245, 0)
+shape = SubResource("BoxShape3D_mpdps")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="."]
+transform = Transform3D(-4.37114e-08, -1, 0, -4.37114e-08, 1.91069e-15, -1, 1, -4.37114e-08, -4.37114e-08, -0.0266724, 0.123665, -0.24275)
+shape = SubResource("CylinderShape3D_bfnr4")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="."]
+transform = Transform3D(-4.37114e-08, -1, 0, -4.37114e-08, 1.91069e-15, -1, 1, -4.37114e-08, -4.37114e-08, -0.027, 0.124, 0.26)
+shape = SubResource("CylinderShape3D_bfnr4")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.597983, 1.27032)
+
+[editable path="vehicle-truck2"]

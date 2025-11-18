@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="CarData" load_steps=2 format=3 uid="uid://coiyr5dhpn4f3"]
+
+[ext_resource type="Script" uid="uid://l4f0dss7ekq0" path="res://COM415 Assignment Resources/Scripts/CarData.gd" id="1_dbxp0"]
+
+[resource]
+script = ExtResource("1_dbxp0")
+car_name = "Truck"
+description = "A standard racing vehicle"
+scene_path = "res://COM415 Assignment Resources/Resources/MyCars/truck/truck.tscn"
+speed = 5.0
+acceleration = 5.0
+handling = 5.0
+braking = 5.0
+traction = 5.0
+engine_sound_path = "res://sounds/engines/default_engine.ogg"
+horn_sound_path = "res://sounds/horns/default_horn.ogg"
+primary_color = Color(1, 1, 1, 1)
+secondary_color = Color(0.745098, 0.745098, 0.745098, 1)
+has_turbo_effect = false
+metadata/_custom_type_script = "uid://l4f0dss7ekq0"

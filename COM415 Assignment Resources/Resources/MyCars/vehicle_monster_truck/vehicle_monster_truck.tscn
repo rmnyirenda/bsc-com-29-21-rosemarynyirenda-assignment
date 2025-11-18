@@ -1,0 +1,44 @@
+[gd_scene load_steps=5 format=3 uid="uid://bioe0eyhia2gs"]
+
+[ext_resource type="PackedScene" uid="uid://ctohxoyndr102" path="res://COM415 Assignment Resources/Vehicles/kenney_toy-car-kit/Models/GLB format/vehicle-monster-truck.glb" id="1_oynpc"]
+[ext_resource type="Script" uid="uid://diati827lyojn" path="res://COM415 Assignment Resources/Scripts/CarScript.gd" id="2_wrbcx"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_j8783"]
+size = Vector3(0.821655, 0.381073, 1)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_spyle"]
+height = 0.681274
+radius = 0.172852
+
+[node name="vehicle-monster-truck" instance=ExtResource("1_oynpc")]
+script = ExtResource("2_wrbcx")
+
+[node name="wheel-bl" parent="." index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.21875, 0.189705, 0.25)
+
+[node name="wheel-fr" parent="." index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.21875, 0.189705, -0.25)
+
+[node name="wheel-fl" parent="." index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.21875, 0.189705, -0.25)
+
+[node name="wheel-br" parent="." index="3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.21875, 0.189705, 0.25)
+
+[node name="body" parent="." index="4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.15981, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00360107, 0.609888, 0)
+shape = SubResource("BoxShape3D_j8783")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="." index="6"]
+transform = Transform3D(-4.37114e-08, -1, 0, -4.37114e-08, 1.91069e-15, -1, 1, -4.37114e-08, -4.37114e-08, -0.0266724, 0.186973, -0.25376)
+shape = SubResource("CylinderShape3D_spyle")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="." index="7"]
+transform = Transform3D(-4.37114e-08, -1, 0, -4.37114e-08, 1.91069e-15, -1, 1, -4.37114e-08, -4.37114e-08, -0.0266724, 0.186973, 0.24624)
+shape = SubResource("CylinderShape3D_spyle")
+
+[node name="Camera3D" type="Camera3D" parent="." index="8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.731316, 1.23338)

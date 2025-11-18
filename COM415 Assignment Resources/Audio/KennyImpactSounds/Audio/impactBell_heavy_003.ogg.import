@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://km1ivauuwg8p"
+path="res://.godot/imported/impactBell_heavy_003.ogg-993af8501d0d53e482d00f8123a2c60b.oggvorbisstr"
+
+[deps]
+
+source_file="res://COM415 Assignment Resources/Audio/KennyImpactSounds/Audio/impactBell_heavy_003.ogg"
+dest_files=["res://.godot/imported/impactBell_heavy_003.ogg-993af8501d0d53e482d00f8123a2c60b.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

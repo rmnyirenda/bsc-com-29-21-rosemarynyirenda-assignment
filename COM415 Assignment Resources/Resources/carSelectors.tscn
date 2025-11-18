@@ -1,0 +1,102 @@
+[gd_scene load_steps=3 format=3 uid="uid://dh7lw80deyool"]
+
+[ext_resource type="Script" uid="uid://b24syumut62ok" path="res://car_selectors.gd" id="1_jc3qs"]
+
+[sub_resource type="ImageTexture" id="ImageTexture_jc3qs"]
+
+[node name="CarSelectors" type="Node3D"]
+
+[node name="CarSelection" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 420.0
+offset_bottom = 519.0
+script = ExtResource("1_jc3qs")
+
+[node name="Background" type="ColorRect" parent="CarSelection"]
+layout_mode = 0
+offset_right = 1189.0
+offset_bottom = 644.0
+color = Color(0.349693, 0.217225, 0.109364, 1)
+
+[node name="CarDisplay" type="TextureRect" parent="CarSelection"]
+layout_mode = 0
+offset_right = 1072.0
+offset_bottom = 638.0
+texture = SubResource("ImageTexture_jc3qs")
+
+[node name="PrevButton" type="Button" parent="CarSelection"]
+layout_mode = 0
+offset_left = 54.0
+offset_top = 275.0
+offset_right = 160.0
+offset_bottom = 333.0
+text = "Back"
+
+[node name="NextButton" type="Button" parent="CarSelection"]
+layout_mode = 0
+offset_left = 876.0
+offset_top = 281.0
+offset_right = 966.0
+offset_bottom = 333.0
+text = "Next"
+
+[node name="SelectButton" type="Button" parent="CarSelection"]
+layout_mode = 0
+offset_left = 536.0
+offset_top = 527.0
+offset_right = 666.0
+offset_bottom = 572.0
+text = "Select"
+
+[node name="CarName" type="Label" parent="CarSelection"]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 10.0
+offset_right = 84.0
+offset_bottom = 48.0
+text = "CarName"
+
+[node name="SpeedLabel" type="Label" parent="CarSelection"]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 106.0
+offset_right = 91.0
+offset_bottom = 129.0
+text = "Speed"
+
+[node name="HandlingLabel" type="Label" parent="CarSelection"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 52.0
+offset_right = 97.0
+offset_bottom = 75.0
+text = "Handling"
+
+[node name="SpeedBar" type="ProgressBar" parent="CarSelection"]
+layout_mode = 0
+offset_left = 129.0
+offset_top = 102.0
+offset_right = 228.0
+offset_bottom = 129.0
+
+[node name="HandlingBar" type="ProgressBar" parent="CarSelection"]
+layout_mode = 0
+offset_left = 125.0
+offset_top = 53.0
+offset_right = 220.0
+offset_bottom = 80.0
+
+[node name="ButtonBack" type="Button" parent="CarSelection"]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="SelectedInfo" type="Label" parent="CarSelection"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[connection signal="pressed" from="CarSelection/PrevButton" to="CarSelection" method="_on_previous_pressed"]
+[connection signal="pressed" from="CarSelection/NextButton" to="CarSelection" method="_on_next_pressed"]
+[connection signal="pressed" from="CarSelection/SelectButton" to="CarSelection" method="_on_select_pressed"]

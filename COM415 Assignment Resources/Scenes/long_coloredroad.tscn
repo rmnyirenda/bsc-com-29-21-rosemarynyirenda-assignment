@@ -1,0 +1,53 @@
+[gd_scene load_steps=3 format=3 uid="uid://br5twv5ltsl7q"]
+
+[ext_resource type="PackedScene" uid="uid://dqtoxhom2fqur" path="res://COM415 Assignment Resources/Environment/kenney_racing-kit/Models/GLTF format/roadStraightLong.glb" id="1_qxt2h"]
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_dbh8w"]
+data = PackedVector3Array(1, 0, 0, 0.9183, 0, 0, 0.9183, 0, -2, 0.9183, 0, -2, 1, 0, -2, 1, 0, 0, 0.0817, 0, 0, 0, 0, 0, 0, 0, -2, 0, 0, -2, 0.0817, 0, -2, 0.0817, 0, 0, 0.9183, 0.02, 0, 0.8451, 0.02, 0, 0.8451, 0.02, -2, 0.8451, 0.02, -2, 0.9183, 0.02, -2, 0.9183, 0.02, 0, 0.8451, 0.02, -2, 0.8451, 0.02, 0, 0.8451, 0.01, 0, 0.8451, 0.01, 0, 0.8451, 0.01, -2, 0.8451, 0.02, -2, 0.9183, 0, -2, 0.9183, 0, 0, 0.9183, 0.02, 0, 0.9183, 0.02, 0, 0.9183, 0.02, -2, 0.9183, 0, -2, 0.0817, 0.02, -2, 0.0817, 0.02, 0, 0.0817, 0, 0, 0.0817, 0, 0, 0.0817, 0, -2, 0.0817, 0.02, -2, 0.1549, 0.02, 0, 0.0817, 0.02, 0, 0.0817, 0.02, -2, 0.0817, 0.02, -2, 0.1549, 0.02, -2, 0.1549, 0.02, 0, 0.1549, 0.01, -2, 0.1549, 0.01, 0, 0.1549, 0.02, 0, 0.1549, 0.02, 0, 0.1549, 0.02, -2, 0.1549, 0.01, -2, 0.8451, 0.01, 0, 0.1549, 0.01, 0, 0.1549, 0.01, -2, 0.1549, 0.01, -2, 0.8451, 0.01, -2, 0.8451, 0.01, 0)
+
+[node name="LongColoredroad" type="Node3D"]
+
+[node name="roadStraightLong" parent="." instance=ExtResource("1_qxt2h")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="roadStraightLong/roadStraightLong(Clone)" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="roadStraightLong/roadStraightLong(Clone)/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_dbh8w")
+
+[node name="roadStraightLong2" parent="." instance=ExtResource("1_qxt2h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="roadStraightLong2/roadStraightLong(Clone)" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="roadStraightLong2/roadStraightLong(Clone)/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_dbh8w")
+
+[node name="roadStraightLong3" parent="." instance=ExtResource("1_qxt2h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="roadStraightLong3/roadStraightLong(Clone)" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="roadStraightLong3/roadStraightLong(Clone)/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_dbh8w")
+
+[node name="roadStraightLong4" parent="." instance=ExtResource("1_qxt2h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 6)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="roadStraightLong4/roadStraightLong(Clone)" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="roadStraightLong4/roadStraightLong(Clone)/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_dbh8w")
+
+[node name="roadStraightLong5" parent="." instance=ExtResource("1_qxt2h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 8)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="roadStraightLong5/roadStraightLong(Clone)" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="roadStraightLong5/roadStraightLong(Clone)/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_dbh8w")
+
+[editable path="roadStraightLong"]
+[editable path="roadStraightLong2"]
+[editable path="roadStraightLong3"]
+[editable path="roadStraightLong4"]
+[editable path="roadStraightLong5"]

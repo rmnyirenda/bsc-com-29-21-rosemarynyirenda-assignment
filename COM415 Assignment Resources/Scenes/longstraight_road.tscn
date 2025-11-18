@@ -1,0 +1,25 @@
+[gd_scene load_steps=2 format=3 uid="uid://bf2eg6hriun6l"]
+
+[ext_resource type="PackedScene" uid="uid://c6cjptop4jrgh" path="res://COM415 Assignment Resources/Scenes/straightroad.tscn" id="1_ahwec"]
+
+[node name="LongstraightRoad" type="Node3D"]
+
+[node name="Straightroad" parent="." instance=ExtResource("1_ahwec")]
+
+[node name="Straightroad2" parent="." instance=ExtResource("1_ahwec")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Straightroad3" parent="." instance=ExtResource("1_ahwec")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="Straightroad4" parent="." instance=ExtResource("1_ahwec")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 0)
+
+[node name="Straightroad5" parent="." instance=ExtResource("1_ahwec")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+
+[node name="Straightroad6" parent="." instance=ExtResource("1_ahwec")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 0)
+
+[node name="Straightroad7" parent="." instance=ExtResource("1_ahwec")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0)

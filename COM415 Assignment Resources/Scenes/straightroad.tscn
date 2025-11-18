@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://c6cjptop4jrgh"]
+
+[ext_resource type="PackedScene" uid="uid://crgg805qxww2p" path="res://COM415 Assignment Resources/Environment/kenney_city-kit-roads/Models/GLB format/road-straight.glb" id="1_sc141"]
+[ext_resource type="PackedScene" uid="uid://o7bxpb6vdw5r" path="res://COM415 Assignment Resources/Environment/kenney_city-kit-roads/Models/GLB format/road-straight-barrier.glb" id="2_q3hm0"]
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_xk6h8"]
+data = PackedVector3Array(0.5, 0.08, -0.47, -0.5, 0.08, -0.47, -0.5, 0.08, -0.5, -0.5, 0.08, -0.5, 0.5, 0.08, -0.5, 0.5, 0.08, -0.47, -0.5, 0, 0.5, 0.5, 0, 0.5, 0.5, 0, 0.45, 0.5, 0, 0.45, -0.5, 0, 0.45, -0.5, 0, 0.5, -0.5, 0, -0.5, -0.5, 0, -0.45, 0.5, 0, -0.45, 0.5, 0, -0.45, 0.5, 0, -0.5, -0.5, 0, -0.5, -0.5, 0, 0.45, 0.5, 0, 0.45, 0.5, 0.08, 0.47, 0.5, 0.08, 0.47, -0.5, 0.08, 0.47, -0.5, 0, 0.45, -0.5, 0.08, -0.47, -0.5, 0, -0.45, -0.5, 0, -0.5, -0.5, 0, -0.5, -0.5, 0.08, -0.5, -0.5, 0.08, -0.47, 0.5, 0.08, 0.47, 0.5, 0.08, 0.5, -0.5, 0.08, 0.5, -0.5, 0.08, 0.5, -0.5, 0.08, 0.47, 0.5, 0.08, 0.47, 0.5, 0.08, 0.47, 0.5, 0, 0.45, 0.5, 0, 0.5, 0.5, 0, 0.5, 0.5, 0.08, 0.5, 0.5, 0.08, 0.47, 0.5, 0.08, -0.47, 0.5, 0, -0.45, -0.5, 0, -0.45, -0.5, 0, -0.45, -0.5, 0.08, -0.47, 0.5, 0.08, -0.47, 0.5, 0.08, -0.5, 0.5, 0, -0.5, 0.5, 0, -0.45, 0.5, 0, -0.45, 0.5, 0.08, -0.47, 0.5, 0.08, -0.5, -0.5, 0.08, 0.5, -0.5, 0, 0.5, -0.5, 0, 0.45, -0.5, 0, 0.45, -0.5, 0.08, 0.47, -0.5, 0.08, 0.5, -0.5, 0.08, 0.5, 0.5, 0.08, 0.5, 0.5, 0, 0.5, 0.5, 0, 0.5, -0.5, 0, 0.5, -0.5, 0.08, 0.5, -0.5, 0, -0.5, 0.5, 0, -0.5, 0.5, 0.08, -0.5, 0.5, 0.08, -0.5, -0.5, 0.08, -0.5, -0.5, 0, -0.5)
+
+[node name="Straightroad" type="Node3D"]
+
+[node name="Road" parent="." instance=ExtResource("1_sc141")]
+
+[node name="road-straight-barrier2" parent="." instance=ExtResource("2_q3hm0")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="road-straight-barrier2/road-straight-barrier" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="road-straight-barrier2/road-straight-barrier/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_xk6h8")
+
+[editable path="Road"]
+[editable path="road-straight-barrier2"]

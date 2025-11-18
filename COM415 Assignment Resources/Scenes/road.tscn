@@ -1,0 +1,310 @@
+[gd_scene load_steps=20 format=4 uid="uid://din4nujo1d45t"]
+
+[ext_resource type="PackedScene" uid="uid://crgg805qxww2p" path="res://COM415 Assignment Resources/Environment/kenney_city-kit-roads/Models/GLB format/road-straight.glb" id="1_15ewh"]
+[ext_resource type="Texture2D" uid="uid://cschy7jvbjfxd" path="res://COM415 Assignment Resources/Environment/kenney_city-kit-roads/Models/GLB format/Textures/colormap.png" id="2_rvnhq"]
+[ext_resource type="PackedScene" uid="uid://orly71j87qwy" path="res://COM415 Assignment Resources/Environment/kenney_city-kit-industrial_1.0/Models/GLB format/building-a.glb" id="3_ue50w"]
+[ext_resource type="PackedScene" uid="uid://b742pm84ap8fr" path="res://COM415 Assignment Resources/Environment/kenney_city-kit-industrial_1.0/Models/GLB format/building-c.glb" id="4_hem77"]
+[ext_resource type="PackedScene" uid="uid://dirtyalbdkg6f" path="res://COM415 Assignment Resources/Environment/kenney_city-kit-industrial_1.0/Models/GLB format/building-b.glb" id="5_c5sdf"]
+[ext_resource type="PackedScene" uid="uid://tti461ohkybd" path="res://COM415 Assignment Resources/Environment/kenney_city-kit-industrial_1.0/Models/GLB format/building-q.glb" id="6_hyqbr"]
+[ext_resource type="PackedScene" uid="uid://cp55teysqpecf" path="res://COM415 Assignment Resources/Environment/kenney_city-kit-commercial_2.1/Models/GLB format/building-skyscraper-e.glb" id="7_l6an1"]
+[ext_resource type="PackedScene" uid="uid://dcfwdj4ovqrnq" path="res://COM415 Assignment Resources/Environment/kenney_city-kit-commercial_2.1/Models/GLB format/building-n.glb" id="8_sny0v"]
+[ext_resource type="PackedScene" uid="uid://bqe4n5r3sc7gw" path="res://COM415 Assignment Resources/Environment/kenney_city-kit-commercial_2.1/Models/GLB format/building-l.glb" id="9_0gu7f"]
+[ext_resource type="PackedScene" uid="uid://cyp1o606whtsw" path="res://COM415 Assignment Resources/Environment/kenney_city-kit-commercial_2.1/Models/GLB format/building-skyscraper-c.glb" id="10_08g08"]
+[ext_resource type="PackedScene" uid="uid://bxfegucos4xip" path="res://COM415 Assignment Resources/Environment/kenney_city-kit-commercial_2.1/Models/GLB format/building-a.glb" id="11_1ix2x"]
+[ext_resource type="PackedScene" uid="uid://dmmh8bkilhagp" path="res://COM415 Assignment Resources/Environment/kenney_city-kit-commercial_2.1/Models/GLB format/low-detail-building-j.glb" id="12_dt4v2"]
+[ext_resource type="PackedScene" uid="uid://bcas5fjqsj1u2" path="res://COM415 Assignment Resources/Environment/kenney_city-kit-commercial_2.1/Models/GLB format/detail-parasol-b.glb" id="13_ij4sg"]
+[ext_resource type="PackedScene" uid="uid://c6vj2rxnkawu5" path="res://COM415 Assignment Resources/Environment/kenney_city-kit-commercial_2.1/Models/GLB format/detail-overhang.glb" id="14_smm16"]
+
+[sub_resource type="NavigationMesh" id="NavigationMesh_twbfo"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6o0d5"]
+resource_name = "colormap"
+cull_mode = 2
+albedo_texture = ExtResource("2_rvnhq")
+texture_filter = 2
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_dwhxa"]
+_surfaces = [{
+"aabb": AABB(-0.5, 0, -0.5, 1, 0.02, 1),
+"format": 34896613377,
+"index_count": 132,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAABAAAAAAADAAUAAwACAAUABQAGAAAAAAAGAAQABAAGAAUABQAHAAQABwAFAAIABAAHAAgAAgAIAAcABAAJAAEACAAJAAQAAgABAAoACQAKAAEACgALAAIAAgALAAgACwAKAAwACQAMAAoADAANAAsACwANAAgADQAMAA4ACQAOAAwADgAPAA0ADQAPAAgACQAQAA4AEQAPAA4ADgAQABEADwARAAgACQASABAAEQAQABIAEgATABEAEQATAAgACQAUABIAFAAJAAgAFAAVABIAFgATABIAEgAVABYAEwAWAAgAFgAVABQACAAXABQAFAAXABYAFgAXAAgA"),
+"name": "colormap",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("/////5kZAAD///9/mRkAAAAA/3+ZGQAAAAD//5kZAAD//wAAAAAAAAAA//8AAAAA/////wAAAAAAAAAAAAAAAAAAAAD//wAA//8AAP//AAD///9/MjMAAAAA/38yMwAA////f3B9AAAAAP9/cH0AAP///3+OggAAAAD/f46CAAD///9/zMwAAAAA/3/MzAAA////f2XmAAAAAP9/ZeYAAP///////wAA/////2XmAAAAAP//ZeYAAAAA/////wAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_uxiju"]
+resource_name = "road-straight_road-straight"
+_surfaces = [{
+"aabb": AABB(-0.5, 0, -0.5, 1, 0.02, 1),
+"attribute_data": PackedByteArray("//dlxv/3/9//9//f//dlxv/3Zcb/95j5//eY+f/3Zcb/92XG//f/3//3/9//92XG//eY+f/3mPn/95j5//eY+f/3Zcb/92XG//dlxv/3Zcb/92XG//eY+f/3mPn/92XG//dlxv/3Zcb/92XG//dlxv83Zcb/N2XG/zf/3/83mPn/N//f/zf/3/83/9//N//f/zf/3/83mPn/N2XG/zdlxv83Zcb/N2XG/zeY+f83/9//N//f/zf/3/83/9//N//f/zf/3/83mPn/N2XG/zdlxv8n/9//J//f/yf/3/8n/9//J//f/yf/3/8n/9//J//f/wf/3/8H/9//B//f/wf/3/8H/9//B//f/wf/3/8H/9//R//f/0f/3/9H/9//R//f"),
+"format": 34896613399,
+"index_count": 132,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwAEAARABIAEgATABAAFAAVABYAFgAXABQAGAAZABoAGgAbABgAHAAdAB4AHwAcAB4AHwAeACAAHwAgACEAHwAhACIAHwAiACMAHwAjACQAJQAfACQAJQAkACYAJgAnACUAKAApACoAKwAoACoALAArACoALQAsACoALgAtACoALwAuACoAMAAvACoAMAAqADEAMQAyADAAMwAwADIANAA1ADYANgA3ADQAOAA5ADoAOgA7ADgAPAA9AD4APgA/ADwAQABBAEIAQgBDAEAARABFAEYARgBHAEQA"),
+"material": SubResource("StandardMaterial3D_6o0d5"),
+"name": "colormap",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 72,
+"vertex_data": PackedByteArray("/////5kZAID///9/mRkAgAAA/3+ZGQCAAAD//5kZAIAAAP//AAD//wAAAAAAAP////8AAAAA////////AAD//wAA//9l5v//AAD/f2Xm//////9/Zeb///////9l5v//AAAAAP///7///wAA////v///AAAAAP+/AAAAAAAA/78AAP//AAD///////8AAP///////5kZ//8AAP//mRn//////////wCA//8AAP//AIAAAAAA//8AgAAA/////wCAAAD//2Xm////////Zeb/////////////AAD/////////////////v/////9l5v+/////f2Xm/7///wAA////v////3/MzP+/////f46C/7////9/cH3/v////38yM/+/////f5kZ/7///wAAAAD/v/////+ZGf+//////wAA/78AAP//Zeb/vwAA//////+/AAAAAP///78AAP9/Zeb/vwAA/3/MzP+/AAD/f46C/78AAP9/cH3/vwAA/38yM/+/AAD/f5kZ/78AAAAAAAD/vwAA//8AAP+/AAD//5kZ/7////9/joL//////3/MzP//AAD/f8zM//8AAP9/joL//wAA/38yM///////fzIz//////9/cH3//wAA/39wff//AAD/f5kZ//////9/mRn//////38yM///AAD/fzIz//8AAP9/zMz//////3/MzP//////f2Xm//8AAP9/Zeb//wAA/39wff//////f3B9//////9/joL//wAA/3+Ogv///3////9/////f////3////9/////f////3////9/////f////3////9/////f///AAD/fwAA/38AAP9/AAD/f/9//7//f/+//3//v/9//7//f////3////9/////f////3//v/9//7//f/+//3//v/9/AAD/fwAA/38AAP9/AAD/fwAA/38AAP9/AAD/fwAA/38AAP9/AAD/fwAA/38AAP9/////f////3////9/////f////3////9/////f////3////9/////f////3////9//7//f/+//3//v/9//7//f/+//3//v/9//7//f/+//3//v/9//7//f/+//3//v/9//7//f/+//3//v/9//7//f/+//3//v/9//7//f/+/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_dwhxa")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_p824i"]
+data = PackedVector3Array(0.5, 0.02, -0.4, 0.5, 0.01, -0.4, -0.5, 0.01, -0.4, -0.5, 0.01, -0.4, -0.5, 0.02, -0.4, 0.5, 0.02, -0.4, -0.5, 0.02, -0.5, -0.5, 0, -0.5, 0.5, 0, -0.5, 0.5, 0, -0.5, 0.5, 0.02, -0.5, -0.5, 0.02, -0.5, -0.5, 0.02, 0.4, -0.5, 0.01, 0.4, 0.5, 0.01, 0.4, 0.5, 0.01, 0.4, 0.5, 0.02, 0.4, -0.5, 0.02, 0.4, -0.5, 0, 0.5, 0.5, 0, 0.5, 0.5, 0, -0.5, 0.5, 0, -0.5, -0.5, 0, -0.5, -0.5, 0, 0.5, -0.5, 0.02, -0.5, 0.5, 0.02, -0.5, 0.5, 0.02, -0.4, 0.5, 0.02, -0.4, -0.5, 0.02, -0.4, -0.5, 0.02, -0.5, 0.5, 0.02, 0.5, 0.5, 0, 0.5, -0.5, 0, 0.5, -0.5, 0, 0.5, -0.5, 0.02, 0.5, 0.5, 0.02, 0.5, -0.5, 0.02, 0.4, 0.5, 0.02, 0.4, 0.5, 0.02, 0.5, 0.5, 0.02, 0.5, -0.5, 0.02, 0.5, -0.5, 0.02, 0.4, 0.5, 0.02, 0.5, 0.5, 0.02, 0.4, 0.5, 0.01, 0.4, 0.5, 0, 0.5, 0.5, 0.02, 0.5, 0.5, 0.01, 0.4, 0.5, 0, 0.5, 0.5, 0.01, 0.4, 0.5, 0.01, 0.3, 0.5, 0, 0.5, 0.5, 0.01, 0.3, 0.5, 0.01, 0.01, 0.5, 0, 0.5, 0.5, 0.01, 0.01, 0.5, 0.01, -0.01, 0.5, 0, 0.5, 0.5, 0.01, -0.01, 0.5, 0.01, -0.3, 0.5, 0, 0.5, 0.5, 0.01, -0.3, 0.5, 0.01, -0.4, 0.5, 0, -0.5, 0.5, 0, 0.5, 0.5, 0.01, -0.4, 0.5, 0, -0.5, 0.5, 0.01, -0.4, 0.5, 0.02, -0.4, 0.5, 0.02, -0.4, 0.5, 0.02, -0.5, 0.5, 0, -0.5, -0.5, 0.02, 0.4, -0.5, 0.02, 0.5, -0.5, 0, 0.5, -0.5, 0.01, 0.4, -0.5, 0.02, 0.4, -0.5, 0, 0.5, -0.5, 0.01, 0.3, -0.5, 0.01, 0.4, -0.5, 0, 0.5, -0.5, 0.01, 0.01, -0.5, 0.01, 0.3, -0.5, 0, 0.5, -0.5, 0.01, -0.01, -0.5, 0.01, 0.01, -0.5, 0, 0.5, -0.5, 0.01, -0.3, -0.5, 0.01, -0.01, -0.5, 0, 0.5, -0.5, 0.01, -0.4, -0.5, 0.01, -0.3, -0.5, 0, 0.5, -0.5, 0.01, -0.4, -0.5, 0, 0.5, -0.5, 0, -0.5, -0.5, 0, -0.5, -0.5, 0.02, -0.5, -0.5, 0.01, -0.4, -0.5, 0.02, -0.4, -0.5, 0.01, -0.4, -0.5, 0.02, -0.5, 0.5, 0.01, 0.01, 0.5, 0.01, 0.3, -0.5, 0.01, 0.3, -0.5, 0.01, 0.3, -0.5, 0.01, 0.01, 0.5, 0.01, 0.01, -0.5, 0.01, -0.3, 0.5, 0.01, -0.3, 0.5, 0.01, -0.01, 0.5, 0.01, -0.01, -0.5, 0.01, -0.01, -0.5, 0.01, -0.3, -0.5, 0.01, -0.4, 0.5, 0.01, -0.4, 0.5, 0.01, -0.3, 0.5, 0.01, -0.3, -0.5, 0.01, -0.3, -0.5, 0.01, -0.4, -0.5, 0.01, 0.3, 0.5, 0.01, 0.3, 0.5, 0.01, 0.4, 0.5, 0.01, 0.4, -0.5, 0.01, 0.4, -0.5, 0.01, 0.3, -0.5, 0.01, -0.01, 0.5, 0.01, -0.01, 0.5, 0.01, 0.01, 0.5, 0.01, 0.01, -0.5, 0.01, 0.01, -0.5, 0.01, -0.01)
+
+[node name="Road" instance=ExtResource("1_15ewh")]
+
+[node name="road-straight" parent="." index="0"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0)
+
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="." index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0183165, 0.403788)
+navigation_mesh = SubResource("NavigationMesh_twbfo")
+
+[node name="road-straight8" type="MeshInstance3D" parent="NavigationRegion3D" index="0"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, -0.0183165, 6.59621)
+mesh = SubResource("ArrayMesh_uxiju")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/road-straight8" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/road-straight8/StaticBody3D" index="0"]
+shape = SubResource("ConcavePolygonShape3D_p824i")
+
+[node name="road-straight11" type="MeshInstance3D" parent="NavigationRegion3D" index="1"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, -0.0183165, 9.59621)
+mesh = SubResource("ArrayMesh_uxiju")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/road-straight11" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/road-straight11/StaticBody3D" index="0"]
+shape = SubResource("ConcavePolygonShape3D_p824i")
+
+[node name="road-straight10" type="MeshInstance3D" parent="NavigationRegion3D" index="2"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, -0.0183165, 8.59621)
+mesh = SubResource("ArrayMesh_uxiju")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/road-straight10" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/road-straight10/StaticBody3D" index="0"]
+shape = SubResource("ConcavePolygonShape3D_p824i")
+
+[node name="road-straight9" type="MeshInstance3D" parent="NavigationRegion3D" index="3"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, -0.0183165, 7.59621)
+mesh = SubResource("ArrayMesh_uxiju")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/road-straight9" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/road-straight9/StaticBody3D" index="0"]
+shape = SubResource("ConcavePolygonShape3D_p824i")
+
+[node name="road-straight7" type="MeshInstance3D" parent="NavigationRegion3D" index="4"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, -0.0183165, 5.59621)
+mesh = SubResource("ArrayMesh_uxiju")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/road-straight7" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/road-straight7/StaticBody3D" index="0"]
+shape = SubResource("ConcavePolygonShape3D_p824i")
+
+[node name="road-straight6" type="MeshInstance3D" parent="NavigationRegion3D" index="5"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, -0.0183165, 4.59621)
+mesh = SubResource("ArrayMesh_uxiju")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/road-straight6" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/road-straight6/StaticBody3D" index="0"]
+shape = SubResource("ConcavePolygonShape3D_p824i")
+
+[node name="road-straight5" type="MeshInstance3D" parent="NavigationRegion3D" index="6"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, -0.0183165, 3.59621)
+mesh = SubResource("ArrayMesh_uxiju")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/road-straight5" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/road-straight5/StaticBody3D" index="0"]
+shape = SubResource("ConcavePolygonShape3D_p824i")
+
+[node name="road-straight4" type="MeshInstance3D" parent="NavigationRegion3D" index="7"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, -0.0183165, 2.59621)
+mesh = SubResource("ArrayMesh_uxiju")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/road-straight4" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/road-straight4/StaticBody3D" index="0"]
+shape = SubResource("ConcavePolygonShape3D_p824i")
+
+[node name="road-straight3" type="MeshInstance3D" parent="NavigationRegion3D" index="8"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, -0.0183165, 1.59621)
+mesh = SubResource("ArrayMesh_uxiju")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/road-straight3" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/road-straight3/StaticBody3D" index="0"]
+shape = SubResource("ConcavePolygonShape3D_p824i")
+
+[node name="road-straight2" type="MeshInstance3D" parent="NavigationRegion3D" index="9"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, -0.0183165, 0.596212)
+mesh = SubResource("ArrayMesh_uxiju")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/road-straight2" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/road-straight2/StaticBody3D" index="0"]
+shape = SubResource("ConcavePolygonShape3D_p824i")
+
+[node name="road-straight21" type="MeshInstance3D" parent="NavigationRegion3D" index="10"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, -0.0183165, -10.4038)
+mesh = SubResource("ArrayMesh_uxiju")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/road-straight21" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/road-straight21/StaticBody3D" index="0"]
+shape = SubResource("ConcavePolygonShape3D_p824i")
+
+[node name="road-straight20" type="MeshInstance3D" parent="NavigationRegion3D" index="11"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, -0.0183165, -9.40379)
+mesh = SubResource("ArrayMesh_uxiju")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/road-straight20" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/road-straight20/StaticBody3D" index="0"]
+shape = SubResource("ConcavePolygonShape3D_p824i")
+
+[node name="road-straight19" type="MeshInstance3D" parent="NavigationRegion3D" index="12"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, -0.0183165, -8.40379)
+mesh = SubResource("ArrayMesh_uxiju")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/road-straight19" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/road-straight19/StaticBody3D" index="0"]
+shape = SubResource("ConcavePolygonShape3D_p824i")
+
+[node name="road-straight18" type="MeshInstance3D" parent="NavigationRegion3D" index="13"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, -0.0183165, -7.40379)
+mesh = SubResource("ArrayMesh_uxiju")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/road-straight18" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/road-straight18/StaticBody3D" index="0"]
+shape = SubResource("ConcavePolygonShape3D_p824i")
+
+[node name="road-straight17" type="MeshInstance3D" parent="NavigationRegion3D" index="14"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, -0.0183165, -6.40379)
+mesh = SubResource("ArrayMesh_uxiju")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/road-straight17" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/road-straight17/StaticBody3D" index="0"]
+shape = SubResource("ConcavePolygonShape3D_p824i")
+
+[node name="road-straight16" type="MeshInstance3D" parent="NavigationRegion3D" index="15"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, -0.0183165, -5.40379)
+mesh = SubResource("ArrayMesh_uxiju")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/road-straight16" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/road-straight16/StaticBody3D" index="0"]
+shape = SubResource("ConcavePolygonShape3D_p824i")
+
+[node name="road-straight15" type="MeshInstance3D" parent="NavigationRegion3D" index="16"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, -0.0183165, -4.40379)
+mesh = SubResource("ArrayMesh_uxiju")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/road-straight15" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/road-straight15/StaticBody3D" index="0"]
+shape = SubResource("ConcavePolygonShape3D_p824i")
+
+[node name="road-straight14" type="MeshInstance3D" parent="NavigationRegion3D" index="17"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, -0.0183165, -3.40379)
+mesh = SubResource("ArrayMesh_uxiju")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/road-straight14" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/road-straight14/StaticBody3D" index="0"]
+shape = SubResource("ConcavePolygonShape3D_p824i")
+
+[node name="road-straight13" type="MeshInstance3D" parent="NavigationRegion3D" index="18"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, -0.0183165, -2.40379)
+mesh = SubResource("ArrayMesh_uxiju")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/road-straight13" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/road-straight13/StaticBody3D" index="0"]
+shape = SubResource("ConcavePolygonShape3D_p824i")
+
+[node name="road-straight12" type="MeshInstance3D" parent="NavigationRegion3D" index="19"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, -0.0183165, -1.40379)
+mesh = SubResource("ArrayMesh_uxiju")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/road-straight12" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/road-straight12/StaticBody3D" index="0"]
+shape = SubResource("ConcavePolygonShape3D_p824i")
+
+[node name="building-a2" parent="." index="2" instance=ExtResource("3_ue50w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 7)
+
+[node name="building-a3" parent="." index="3" instance=ExtResource("3_ue50w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 0, 3)
+
+[node name="building-c2" parent="." index="4" instance=ExtResource("4_hem77")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 5)
+
+[node name="building-b2" parent="." index="5" instance=ExtResource("5_c5sdf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 8)
+
+[node name="building-q2" parent="." index="6" instance=ExtResource("6_hyqbr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 4)
+
+[node name="building-q3" parent="." index="7" instance=ExtResource("6_hyqbr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 2)
+
+[node name="building-skyscraper-e2" parent="." index="8" instance=ExtResource("7_l6an1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 5)
+
+[node name="building-n2" parent="." index="9" instance=ExtResource("8_sny0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 4, 8)
+
+[node name="building-l2" parent="." index="10" instance=ExtResource("9_0gu7f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, -4, -3)
+
+[node name="building-skyscraper-c2" parent="." index="11" instance=ExtResource("10_08g08")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 7)
+
+[node name="building-a4" parent="." index="12" instance=ExtResource("11_1ix2x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 10)
+
+[node name="low-detail-building-j2" parent="." index="13" instance=ExtResource("12_dt4v2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 9)
+
+[node name="detail-parasol-b2" parent="." index="14" instance=ExtResource("13_ij4sg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 9)
+
+[node name="detail-overhang2" parent="." index="15" instance=ExtResource("14_smm16")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2, 0, 8)

@@ -1,0 +1,67 @@
+[gd_scene load_steps=3 format=3 uid="uid://cysh3rm61bkj2"]
+
+[ext_resource type="Script" uid="uid://drqyeurud3g7p" path="res://main_menu.gd" id="1_hko7e"]
+[ext_resource type="Texture2D" uid="uid://nagux8iooxsw" path="res://COM415 Assignment Resources/KennyUIPack/UI Textures/green_button00.png" id="2_mfwt2"]
+
+[node name="MenuScene" type="Node3D"]
+
+[node name="MainMenu" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 612.0
+offset_bottom = 591.0
+script = ExtResource("1_hko7e")
+
+[node name="Background" type="ColorRect" parent="MainMenu"]
+layout_mode = 0
+offset_left = -1.0
+offset_top = 1.0
+offset_right = 608.0
+offset_bottom = 585.0
+color = Color(0.233925, 0.233925, 0.233925, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MainMenu"]
+layout_mode = 0
+offset_left = 35.0
+offset_top = 92.0
+offset_right = 562.0
+offset_bottom = 431.0
+alignment = 1
+
+[node name="Label" type="Label" parent="MainMenu/VBoxContainer"]
+layout_mode = 2
+text = "RACING GAME "
+
+[node name="StartButton" type="Button" parent="MainMenu/VBoxContainer"]
+layout_mode = 2
+text = "Start "
+icon = ExtResource("2_mfwt2")
+icon_alignment = 2
+
+[node name="VehicleSelectButton" type="Button" parent="MainMenu/VBoxContainer"]
+layout_mode = 2
+text = "Vehicle Selection "
+icon = ExtResource("2_mfwt2")
+icon_alignment = 2
+
+[node name="TrackSelectionButton" type="Button" parent="MainMenu/VBoxContainer"]
+layout_mode = 2
+text = "Track Selection "
+icon = ExtResource("2_mfwt2")
+icon_alignment = 2
+
+[node name="QuitButton" type="Button" parent="MainMenu/VBoxContainer"]
+layout_mode = 2
+text = "Quit "
+icon = ExtResource("2_mfwt2")
+icon_alignment = 2
+
+[node name="GreenButton00" type="Sprite2D" parent="MainMenu/VBoxContainer"]
+position = Vector2(-398, 570)
+texture = ExtResource("2_mfwt2")
+
+[node name="Label" type="Label" parent="MainMenu"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "SelectedInfo"

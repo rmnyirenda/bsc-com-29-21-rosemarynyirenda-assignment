@@ -1,0 +1,38 @@
+[gd_scene load_steps=6 format=3 uid="uid://l2ryj1das4gn"]
+
+[ext_resource type="PackedScene" uid="uid://b20dqohhsurpk" path="res://COM415 Assignment Resources/Environment/kenney_racing-kit/Models/GLTF format/raceCarGreen.glb" id="1_udnky"]
+[ext_resource type="Script" uid="uid://diati827lyojn" path="res://COM415 Assignment Resources/Scripts/CarScript.gd" id="2_l4uxa"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_yltpi"]
+size = Vector3(0.458896, 0.24913, 1.37406)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_ffkwy"]
+height = 0.738944
+radius = 0.12207
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_ua2mo"]
+height = 0.729071
+radius = 0.125488
+
+[node name="raceCarGreen" node_paths=PackedStringArray("front_left_wheels", "front_right_wheels") instance=ExtResource("1_udnky")]
+script = ExtResource("2_l4uxa")
+front_left_wheels = NodePath("raceCarGreen _8angles(Clone)/wheelFrontLeft")
+front_right_wheels = NodePath("raceCarGreen _8angles(Clone)/wheelFrontRight")
+
+[node name="raceCarGreen _8angles(Clone)" parent="." index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1"]
+transform = Transform3D(0.999467, 0.0326493, 0, -0.0326493, 0.999467, 0, 0, 0, 1, 0.0246971, 0.18067, -0.0385987)
+shape = SubResource("BoxShape3D_yltpi")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." index="2"]
+transform = Transform3D(0.0408141, -0.998921, 0.0221751, 0.909836, 0.0279833, -0.414023, 0.412956, 0.0370736, 0.909997, 0.000743905, 0.128171, 0.349094)
+shape = SubResource("CylinderShape3D_ffkwy")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="." index="3"]
+transform = Transform3D(0.00264211, 0.999996, -0.00100692, -0.934437, 0.00282748, 0.356117, 0.356118, 0, 0.934441, 0.00421247, 0.118945, -0.46668)
+shape = SubResource("CylinderShape3D_ua2mo")
+
+[node name="Camera3D" type="Camera3D" parent="." index="4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.589, 1.27)

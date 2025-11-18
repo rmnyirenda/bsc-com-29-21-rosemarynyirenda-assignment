@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://77tf5t5pk4di"]
+
+[ext_resource type="PackedScene" uid="uid://byga80sp51exs" path="res://COM415 Assignment Resources/Environment/kenney_city-kit-roads/Models/FBX format/road-bridge.fbx" id="1_7nykh"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="road-bridge" parent="." instance=ExtResource("1_7nykh")]

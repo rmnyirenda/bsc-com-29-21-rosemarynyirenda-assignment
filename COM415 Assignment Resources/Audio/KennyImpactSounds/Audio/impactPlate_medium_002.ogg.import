@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://4loms8svtq2"
+path="res://.godot/imported/impactPlate_medium_002.ogg-662190fff5c77c2c4a108230c6080c8e.oggvorbisstr"
+
+[deps]
+
+source_file="res://COM415 Assignment Resources/Audio/KennyImpactSounds/Audio/impactPlate_medium_002.ogg"
+dest_files=["res://.godot/imported/impactPlate_medium_002.ogg-662190fff5c77c2c4a108230c6080c8e.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

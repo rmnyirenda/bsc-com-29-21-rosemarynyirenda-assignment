@@ -1,0 +1,37 @@
+[gd_scene load_steps=7 format=3 uid="uid://co1re11l6i35d"]
+
+[ext_resource type="PackedScene" uid="uid://bioe0eyhia2gs" path="res://COM415 Assignment Resources/Resources/MyCars/vehicle_monster_truck/vehicle_monster_truck.tscn" id="1_fyt6y"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_l5f3y"]
+size = Vector3(7, 0.1, 7)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_n6gjk"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_xbphp"]
+
+[sub_resource type="Sky" id="Sky_ldipm"]
+sky_material = SubResource("ProceduralSkyMaterial_xbphp")
+
+[sub_resource type="Environment" id="Environment_eut2j"]
+background_mode = 2
+sky = SubResource("Sky_ldipm")
+
+[node name="Node3D" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.07976)
+mesh = SubResource("BoxMesh_l5f3y")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D"]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0257692, 0.0504472, -0.0454815)
+shape = SubResource("BoxShape3D_n6gjk")
+
+[node name="vehicle-monster-truck" parent="." instance=ExtResource("1_fyt6y")]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_eut2j")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="WorldEnvironment"]

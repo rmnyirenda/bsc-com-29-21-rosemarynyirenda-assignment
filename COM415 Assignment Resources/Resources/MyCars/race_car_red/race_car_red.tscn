@@ -1,0 +1,46 @@
+[gd_scene load_steps=8 format=3 uid="uid://b1ddganlc2g2l"]
+
+[ext_resource type="PackedScene" uid="uid://bjh5pnmcp6e0o" path="res://COM415 Assignment Resources/Environment/kenney_racing-kit/Models/DAE format/raceCarRed.dae" id="1_dhwxy"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_mtoi6"]
+size = Vector3(0.793028, 0.464798, 1.37561)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_cr7ht"]
+height = 0.866174
+radius = 0.233887
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_0u5f7"]
+height = 0.925751
+radius = 0.281738
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_45dtu"]
+
+[sub_resource type="Sky" id="Sky_ns2hs"]
+sky_material = SubResource("ProceduralSkyMaterial_45dtu")
+
+[sub_resource type="Environment" id="Environment_t0hda"]
+background_mode = 2
+sky = SubResource("Sky_ns2hs")
+
+[node name="raceCarRed" instance=ExtResource("1_dhwxy")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0201807, 0.149605, 0.00177002)
+shape = SubResource("BoxShape3D_mtoi6")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="." index="7"]
+transform = Transform3D(-4.37114e-08, -1, 0, -4.37114e-08, 1.91069e-15, 1, -1, 4.37114e-08, -4.37114e-08, 0.013591, 0.123038, 0.522572)
+shape = SubResource("CylinderShape3D_cr7ht")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." index="8"]
+transform = Transform3D(-4.37114e-08, -1, 0, -4.37114e-08, 1.91069e-15, -1, 1, -4.37114e-08, -4.37114e-08, -0.00317144, 0.0510783, -0.380338)
+shape = SubResource("CylinderShape3D_0u5f7")
+
+[node name="Camera3D" type="Camera3D" parent="." index="9"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0.283716, -7.6115)
+fov = 97.6741
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." index="10"]
+environment = SubResource("Environment_t0hda")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="WorldEnvironment" index="0"]

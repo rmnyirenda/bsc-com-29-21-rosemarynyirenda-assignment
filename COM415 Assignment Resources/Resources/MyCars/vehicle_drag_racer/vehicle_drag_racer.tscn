@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://deqefkb7bnmtj"]
+
+[ext_resource type="PackedScene" uid="uid://6pjhloxgckqo" path="res://COM415 Assignment Resources/Vehicles/kenney_toy-car-kit/Models/GLB format/vehicle-drag-racer.glb" id="1_tbdbk"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fvsdr"]
+size = Vector3(0.625702, 0.457062, 1.38073)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_2dsix"]
+height = 0.595093
+radius = 0.123535
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_g2aop"]
+height = 0.781128
+radius = 0.158203
+
+[node name="vehicle-drag-racer" instance=ExtResource("1_tbdbk")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00831604, 0.367202, 0.0229855)
+shape = SubResource("BoxShape3D_fvsdr")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." index="2"]
+transform = Transform3D(-4.37114e-08, -1, 0, -4.37114e-08, 1.91069e-15, -1, 1, -4.37114e-08, -4.37114e-08, 0.0170288, 0.129026, -0.363197)
+shape = SubResource("CylinderShape3D_2dsix")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="." index="3"]
+transform = Transform3D(-4.37114e-08, -1, 0, -4.37114e-08, 1.91069e-15, -1, 1, -4.37114e-08, -4.37114e-08, 0.0276489, 0.156188, 0.464316)
+shape = SubResource("CylinderShape3D_g2aop")
+
+[node name="Camera3D" type="Camera3D" parent="." index="4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.785935, 1.53421)

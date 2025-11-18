@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://leutge7xkul3"
+path="res://.godot/imported/pipe.obj-ac7dce6e83db79f1d672d2e3a9ed93ee.mesh"
+
+[deps]
+
+files=["res://.godot/imported/pipe.obj-ac7dce6e83db79f1d672d2e3a9ed93ee.mesh"]
+
+source_file="res://COM415 Assignment Resources/Environment/kenney_prototype-kit/Models/OBJ format/pipe.obj"
+dest_files=["res://.godot/imported/pipe.obj-ac7dce6e83db79f1d672d2e3a9ed93ee.mesh", "res://.godot/imported/pipe.obj-ac7dce6e83db79f1d672d2e3a9ed93ee.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

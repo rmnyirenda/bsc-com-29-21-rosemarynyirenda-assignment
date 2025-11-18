@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://c7y7qiuyaby40"
+path="res://.godot/imported/12_LOOP_The_Jester's_Tale_by_Florian_Stracker.wav-61fc1df034817f326f70411222570795.sample"
+
+[deps]
+
+source_file="res://COM415 Assignment Resources/Audio/Florian_Stracker_8-Bit_Video_Game_Music/12_LOOP_The_Jester's_Tale_by_Florian_Stracker.wav"
+dest_files=["res://.godot/imported/12_LOOP_The_Jester's_Tale_by_Florian_Stracker.wav-61fc1df034817f326f70411222570795.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2
