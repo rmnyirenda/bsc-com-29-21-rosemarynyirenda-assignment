@@ -17,8 +17,13 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-CarManager="*res://COM415 Assignment Resources/Managers/carManager.gd"
 GameManager="*res://COM415 Assignment Resources/Managers/game_manager.gd"
+CarManager="*res://COM415 Assignment Resources/Managers/carManager.gd"
+
+[global_group]
+
+player=""
+ai_cars=""
 
 [input]
 
@@ -50,3 +55,7 @@ brake={
 , Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"button_index":1,"pressure":0.0,"pressed":false,"script":null)
 ]
 }
+
+[input_devices]
+
+pointing/emulate_touch_from_mouse=true

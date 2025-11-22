@@ -1,0 +1,85 @@
+[gd_scene load_steps=2 format=3 uid="uid://b6cibkrger1np"]
+
+[ext_resource type="Script" uid="uid://cbg6rrjafchgw" path="res://track_selector.gd" id="1_fkr5a"]
+
+[node name="TrackSelection" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 721.0
+offset_bottom = 647.0
+script = ExtResource("1_fkr5a")
+
+[node name="TrackDisplay" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1092.0
+offset_bottom = 687.0
+
+[node name="TrackName" type="Label" parent="."]
+layout_mode = 0
+offset_left = -1.0
+offset_top = 37.0
+offset_right = 98.0
+offset_bottom = 60.0
+
+[node name="DescriptionLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 382.0
+offset_right = 78.0
+offset_bottom = 405.0
+text = "TrackInfo"
+
+[node name="DifficultyLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 61.0
+offset_right = 53.0
+offset_bottom = 84.0
+text = "Speed"
+
+[node name="LapsLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 131.0
+offset_right = 59.0
+offset_bottom = 154.0
+text = "Laps"
+
+[node name="LengthLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 91.0
+offset_right = 75.0
+offset_bottom = 114.0
+text = "Handling"
+
+[node name="ButtonPrevious" type="Button" parent="."]
+layout_mode = 0
+offset_left = 76.0
+offset_top = 185.0
+offset_right = 119.0
+offset_bottom = 216.0
+text = "Prev"
+
+[node name="ButtonNext" type="Button" parent="."]
+layout_mode = 0
+offset_left = 571.0
+offset_top = 194.0
+offset_right = 616.0
+offset_bottom = 225.0
+text = "Next"
+
+[node name="ButtonSelect" type="Button" parent="."]
+layout_mode = 0
+offset_left = 337.0
+offset_top = 331.0
+offset_right = 391.0
+offset_bottom = 362.0
+text = "Select"
+
+[node name="ButtonBack" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1.0
+offset_right = 55.0
+offset_bottom = 31.0
+text = "Back"

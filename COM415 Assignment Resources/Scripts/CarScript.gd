@@ -5,6 +5,7 @@ const METERSPORSEC = 3.6
 
 @onready var camera_3d: Camera3D = $Camera3D
 
+@export var racer_name := "Player"
 @export var speed = 10.0
 @export var turn_speed = 0.8
 @export var gravity = -20.0
@@ -24,8 +25,17 @@ var acceleration = Vector3.ZERO  # current acceleration
 var steer_angle = 0.0  # current wheel angle
 var target_look
 var current_speed: float = 0.0
+var is_active := true
+
+func _ready():
+	add_to_group("player")
+	
+
 
 func _physics_process(delta):
+	if not is_active:
+		return
+	
 	if is_on_floor():
 		get_input()
 		apply_friction(delta)
@@ -67,3 +77,12 @@ func get_input():
 		acceleration = -transform.basis.z * engine_power
 	if Input.is_action_pressed("brake"):
 		acceleration = -transform.basis.z * braking
+		
+
+func get_racer_name() -> String:
+	return racer_name
+
+func set_active(active: bool):
+	is_active = active
+	if not active:
+		acceleration = Vector3.ZERO

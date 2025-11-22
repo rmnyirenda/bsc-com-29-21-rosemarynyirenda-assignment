@@ -1,0 +1,71 @@
+[gd_scene load_steps=2 format=3 uid="uid://cs88h8yoquwub"]
+
+[ext_resource type="Script" uid="uid://do5t8uf6ct5qc" path="res://race_hud.gd" id="1_g5w21"]
+
+[node name="LapScene" type="Node3D"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_g5w21")
+
+[node name="MarginContainer" type="MarginContainer" parent="Control"]
+layout_mode = 0
+offset_right = 498.0
+offset_bottom = 572.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/MarginContainer"]
+layout_mode = 2
+
+[node name="SpeedLabel" type="Label" parent="Control/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "speed:"
+
+[node name="LapLabel" type="Label" parent="Control/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Lap:"
+
+[node name="PositionLabel" type="Label" parent="Control/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Position:"
+
+[node name="RaceEndPanel" type="Panel" parent="Control"]
+layout_mode = 0
+offset_left = 172.0
+offset_top = 139.0
+offset_right = 439.0
+offset_bottom = 368.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/RaceEndPanel"]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 1.0
+offset_right = 267.0
+offset_bottom = 227.0
+
+[node name="TittleLabel" type="Label" parent="Control/RaceEndPanel/VBoxContainer"]
+layout_mode = 2
+text = "Race Completed"
+
+[node name="PositionLabel" type="Label" parent="Control/RaceEndPanel/VBoxContainer"]
+layout_mode = 2
+text = "Position"
+
+[node name="TimeLabel3" type="Label" parent="Control/RaceEndPanel/VBoxContainer"]
+layout_mode = 2
+text = "Time"
+
+[node name="ReplayButton" type="Button" parent="Control/RaceEndPanel/VBoxContainer"]
+layout_mode = 2
+text = "Replay Race"
+alignment = 0
+
+[node name="MenuButton" type="Button" parent="Control/RaceEndPanel/VBoxContainer"]
+layout_mode = 2
+text = "Main Menu"
+alignment = 0
+
+[connection signal="pressed" from="Control/RaceEndPanel/VBoxContainer/ReplayButton" to="Control" method="_on_replay_pressed"]
+[connection signal="pressed" from="Control/RaceEndPanel/VBoxContainer/MenuButton" to="Control" method="_on_menu_pressed"]

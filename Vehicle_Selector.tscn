@@ -1,0 +1,101 @@
+[gd_scene load_steps=5 format=3 uid="uid://b5u230cnuqjyh"]
+
+[ext_resource type="Script" uid="uid://dgkt0mrfqmn4b" path="res://car_selectors.gd" id="1_fx7rj"]
+[ext_resource type="Texture2D" uid="uid://ytqibybjq3ql" path="res://COM415 Assignment Resources/KennyUIPack/UI Textures/green_sliderLeft.png" id="2_sawti"]
+[ext_resource type="Texture2D" uid="uid://c0dsciynadh6h" path="res://COM415 Assignment Resources/KennyUIPack/UI Textures/green_sliderRight.png" id="3_dyyym"]
+[ext_resource type="Texture2D" uid="uid://1eq274rluqwk" path="res://COM415 Assignment Resources/KennyUIPack/UI Textures/green_button10.png" id="4_0d4v0"]
+
+[node name="carSelection" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 721.0
+offset_bottom = 647.0
+script = ExtResource("1_fx7rj")
+
+[node name="CarDisplay" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1092.0
+offset_bottom = 687.0
+
+[node name="CarName" type="Label" parent="."]
+layout_mode = 0
+offset_right = 107.0
+offset_bottom = 23.0
+
+[node name="SpeedLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 138.0
+offset_top = 47.0
+offset_right = 186.0
+offset_bottom = 70.0
+text = "Speed"
+
+[node name="SpeedBar" type="ProgressBar" parent="."]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 41.0
+offset_right = 103.0
+offset_bottom = 68.0
+
+[node name="HandlingLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 126.0
+offset_top = 91.0
+offset_right = 196.0
+offset_bottom = 114.0
+text = "Handling"
+
+[node name="HandlingBar" type="ProgressBar" parent="."]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 85.0
+offset_right = 99.0
+offset_bottom = 112.0
+
+[node name="ButtonPrevious" type="TouchScreenButton" parent="."]
+position = Vector2(29, 198)
+texture_normal = ExtResource("2_sawti")
+
+[node name="ButtonNext" type="TouchScreenButton" parent="."]
+position = Vector2(653, 188)
+texture_normal = ExtResource("3_dyyym")
+
+[node name="ButtonSelect" type="TouchScreenButton" parent="."]
+position = Vector2(337, 435)
+texture_normal = ExtResource("4_0d4v0")
+
+[node name="ButtonBack" type="TouchScreenButton" parent="."]
+position = Vector2(236, 4)
+texture_normal = ExtResource("2_sawti")
+
+[node name="Prev" type="Label" parent="."]
+layout_mode = 0
+offset_left = 33.0
+offset_top = 174.0
+offset_right = 73.0
+offset_bottom = 197.0
+text = "Prev"
+
+[node name="Next" type="Label" parent="."]
+layout_mode = 0
+offset_left = 652.0
+offset_top = 163.0
+offset_right = 692.0
+offset_bottom = 186.0
+text = "Next"
+
+[node name="Select" type="Label" parent="."]
+layout_mode = 0
+offset_left = 336.0
+offset_top = 490.0
+offset_right = 382.0
+offset_bottom = 513.0
+text = "Select"
+
+[node name="Back" type="Label" parent="."]
+layout_mode = 0
+offset_left = 291.0
+offset_top = 6.0
+offset_right = 331.0
+offset_bottom = 29.0
+text = "Back"

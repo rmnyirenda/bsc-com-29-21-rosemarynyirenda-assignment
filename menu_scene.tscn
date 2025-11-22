@@ -1,72 +1,56 @@
-[gd_scene load_steps=3 format=3 uid="uid://do1t7gtp6xneg"]
+[gd_scene load_steps=2 format=3 uid="uid://do1t7gtp6xneg"]
 
-[ext_resource type="Script" uid="uid://degdpihke5ior" path="res://main_menu.gd" id="1_hko7e"]
-[ext_resource type="Texture2D" uid="uid://nagux8iooxsw" path="res://COM415 Assignment Resources/KennyUIPack/UI Textures/green_button00.png" id="2_mfwt2"]
+[ext_resource type="Script" uid="uid://crovoup2lfc2d" path="res://Menu.gd" id="1_vbts7"]
 
-[node name="MenuScene" type="Node3D"]
-
-[node name="MainMenu" type="Control" parent="."]
+[node name="Control" type="Control"]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 612.0
-offset_bottom = 591.0
-script = ExtResource("1_hko7e")
+offset_right = 907.0
+offset_bottom = 608.0
+script = ExtResource("1_vbts7")
 
-[node name="Background" type="ColorRect" parent="MainMenu"]
+[node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 0
-offset_left = -1.0
-offset_top = 1.0
-offset_right = 608.0
-offset_bottom = 585.0
-color = Color(0.233925, 0.233925, 0.233925, 1)
+offset_right = 1155.0
+offset_bottom = 652.0
+color = Color(0.209956, 0.26311, 0.13178, 1)
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MainMenu"]
+[node name="VBoxContainer" type="VBoxContainer" parent="ColorRect"]
 layout_mode = 0
-offset_left = 35.0
-offset_top = 92.0
-offset_right = 562.0
-offset_bottom = 431.0
-alignment = 1
+offset_left = 6.0
+offset_top = -2.0
+offset_right = 769.0
+offset_bottom = 440.0
 
-[node name="Label" type="Label" parent="MainMenu/VBoxContainer"]
+[node name="Label" type="Label" parent="ColorRect/VBoxContainer"]
 layout_mode = 2
-text = "RACING GAME "
+text = "RACING GAME"
 
-[node name="StartButton" type="Button" parent="MainMenu/VBoxContainer"]
+[node name="StartButton" type="Button" parent="ColorRect/VBoxContainer"]
 layout_mode = 2
-text = "Start "
-icon = ExtResource("2_mfwt2")
-icon_alignment = 2
+text = "START"
 
-[node name="VehicleSelectButton" type="Button" parent="MainMenu/VBoxContainer"]
+[node name="VehicleSelectButton" type="Button" parent="ColorRect/VBoxContainer"]
 layout_mode = 2
-text = "Vehicle Selection "
-icon = ExtResource("2_mfwt2")
-icon_alignment = 2
+text = "Vehicle Selection"
 
-[node name="TrackSelectionButton" type="Button" parent="MainMenu/VBoxContainer"]
+[node name="TrackSelectButton" type="Button" parent="ColorRect/VBoxContainer"]
 layout_mode = 2
-text = "Track Selection "
-icon = ExtResource("2_mfwt2")
-icon_alignment = 2
+text = "Track Selection"
 
-[node name="QuitButton" type="Button" parent="MainMenu/VBoxContainer"]
+[node name="QuitButton" type="Button" parent="ColorRect/VBoxContainer"]
 layout_mode = 2
-text = "Quit "
-icon = ExtResource("2_mfwt2")
-icon_alignment = 2
+text = "Quit"
 
-[node name="GreenButton00" type="Sprite2D" parent="MainMenu/VBoxContainer"]
-position = Vector2(-398, 570)
-texture = ExtResource("2_mfwt2")
-
-[node name="SelectedInfo" type="Label" parent="MainMenu"]
+[node name="Label" type="Label" parent="."]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
-text = "SelectedInfo"
+offset_left = 25.0
+offset_top = 284.0
+offset_right = 125.0
+offset_bottom = 307.0
+text = "Selected Info"
 
-[connection signal="pressed" from="MainMenu/VBoxContainer/StartButton" to="MainMenu" method="_on_start_pressed"]
-[connection signal="pressed" from="MainMenu/VBoxContainer/VehicleSelectButton" to="MainMenu" method="_on_vehicle_select_pressed"]
-[connection signal="pressed" from="MainMenu/VBoxContainer/TrackSelectionButton" to="MainMenu" method="_on_track_select_pressed"]
-[connection signal="pressed" from="MainMenu/VBoxContainer/QuitButton" to="MainMenu" method="_on_quit_pressed"]
+[connection signal="pressed" from="ColorRect/VBoxContainer/StartButton" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="ColorRect/VBoxContainer/VehicleSelectButton" to="." method="_on_vehicle_select_pressed"]
+[connection signal="pressed" from="ColorRect/VBoxContainer/TrackSelectButton" to="." method="_on_track_select_pressed"]
+[connection signal="pressed" from="ColorRect/VBoxContainer/QuitButton" to="." method="_on_quit_pressed"]

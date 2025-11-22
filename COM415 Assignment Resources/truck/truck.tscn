@@ -10,7 +10,7 @@ size = Vector3(0.821655, 0.443954, 0.8396)
 height = 0.681274
 radius = 0.126465
 
-[node name="Truck" type="CharacterBody3D" node_paths=PackedStringArray("front_left_wheels", "front_right_wheels")]
+[node name="Truck" type="CharacterBody3D" node_paths=PackedStringArray("front_left_wheels", "front_right_wheels") groups=["player"]]
 script = ExtResource("1_8etvf")
 engine_power = 50.0
 front_left_wheels = NodePath("vehicle-truck2/vehicle-truck/wheel-fl")

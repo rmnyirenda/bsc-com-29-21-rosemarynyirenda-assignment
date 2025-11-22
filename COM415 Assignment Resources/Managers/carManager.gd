@@ -21,3 +21,10 @@ func previous_car():
 	if current_car_index < 0:
 		current_car_index = car_scenes.size() - 1
 	return get_current_car()
+
+func instantiate_car() -> Node:
+	var car_path = get_current_car()
+	var car_scene = load(car_path)
+	if car_scene:
+		return car_scene.instantiate()
+	return null
